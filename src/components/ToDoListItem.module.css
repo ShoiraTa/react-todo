@@ -1,29 +1,29 @@
-.item{
+.item {
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid gainsboro;
-  height: 40px  ;
+  height: 40px;
   width: 100%;
 }
 
-.itemLeft{
+.itemLeft {
   display: flex;
   align-items: center;
-  justify-content: space-between
+  justify-content: space-between;
 }
 
 .itemLeft input {
-  margin-right: 0.5rem
+  margin-right: 0.5rem;
 }
 
-.itemLeft input, button{
-  cursor: pointer  ;
+.itemLeft input,
+button {
   cursor: pointer;
-    background: none;
-    border: none;
-    padding-right: 15px;
-    font-size: 1.2rem;
+  background: none;
+  border: none;
+  padding-right: 15px;
+  font-size: 1.2rem;
 }
 
 .completed {
@@ -31,20 +31,20 @@
   font-style: italic;
 }
 
-.p{
+.p {
   width: 400px;
-
   padding: 0 5px;
 }
-.p:focus{
+
+.p:focus {
   outline: 1px solid gainsboro;
   border-radius: 7px;
 }
 
-.dNone{
+.dNone {
   display: none;
 }
 
-.dBlock{
+.dBlock {
   display: block;
 }

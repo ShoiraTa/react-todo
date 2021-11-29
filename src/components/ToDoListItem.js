@@ -1,26 +1,33 @@
-import React, { useState } from 'react'
-import classes from './ToDoListItem.module.css'
-import { FaTrash } from "react-icons/fa";
+import React, { useState } from 'react';
+import { FaTrash } from 'react-icons/fa';
+import classes from './ToDoListItem.module.css';
 
-function ToDoListItem({task, deleteHandler}) {
-  const [status, setStatus] = useState (false)
+// eslint-disable-next-line
+function ToDoListItem({ task, deleteHandler }) {
+  const [status, setStatus] = useState(false);
 
   const statusHandler = () => {
-   status?   setStatus(false) : setStatus(true)
-  }
-
+    // eslint-disable-next-line
+    status ? setStatus(false) : setStatus(true);
+  };
 
   return (
-    <div  className = {classes.item}>
-      <div className = {`${classes.itemLeft} ${status ? classes.completed : null}` }> 
-        <input type="checkbox"  onChange= {statusHandler}/>
-        <p className = {classes.p} contenteditable="true" >{task } </p>
+    <div className={classes.item}>
+      <div className={`${classes.itemLeft} ${status ? classes.completed : null}`}>
+        <input type="checkbox" onChange={statusHandler} />
+        <p className={classes.p} contentEditable="true">
+          {task }
+          {' '}
+        </p>
       </div>
       <div>
-        <button onChange= {statusHandler} onClick = {deleteHandler}> <FaTrash style={{color: "orangered", fontSize: "16px"}}/></button>
+        <button type="button" onChange={statusHandler} onClick={deleteHandler}>
+          {' '}
+          <FaTrash style={{ color: 'orangered', fontSize: '16px' }} />
+        </button>
       </div>
     </div>
-  )
+  );
 }
 
-export default ToDoListItem
+export default ToDoListItem;

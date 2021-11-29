@@ -3,7 +3,8 @@
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.38);
   border-radius: 10px;
 }
-.formInput{
+
+.formInput {
   width: 87%;
   padding: 10px 7px;
   border: none;

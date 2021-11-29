@@ -1,44 +1,52 @@
-import React, {useState} from 'react'
-import classes from './ToDoListForm.module.css' 
-import { FaPlusCircle } from "react-icons/fa";
+/* eslint-disable react/prefer-stateless-function */
+/* eslint-disable react/forbid-prop-types */
+/* eslint-disable react/jsx-closing-bracket-location */
+/* eslint-disable react/jsx-closing-tag-location */
+/* eslint-disable react/jsx-closing-tag-location */
 
-function ToDoListForm({onSubmit}) {
-  const [task, setTask] = useState('')
+import React, { useState } from 'react';
+import { FaPlusCircle } from 'react-icons/fa';
+import classes from './ToDoListForm.module.css';
+
+function ToDoListForm(props) {
+  const [task, setTask] = useState('');
 
   const onChange = (e) => {
-    setTask(e.target.value)
-  }
+    setTask(e.target.value);
+  };
 
   const submitHandler = (e) => {
-    e.preventDefault()
-    if(task.trim().length === 0 ){
-      window.alert("Please write item")
-      return
+    e.preventDefault();
+    if (task.trim().length === 0) {
+      window.alert('Please write item');
+      return;
     }
     const newTask = {
-      task: task,
-      id: Math.floor(Math.random()*1000)+1,
-      status: false
-    }
-    onSubmit(newTask)
-    setTask("")
-  }
+      task,
+      id: Math.floor(Math.random() * 1000) + 1,
+      status: false,
+    };
+    // eslint-disable-next-line
+    props.onSubmit(newTask);
+    setTask('');
+  };
 
   return (
-    <form className={classes.form}  onSubmit ={submitHandler}>
-      <input  
-      onChange={onChange} 
-      name="title"  
-      placeholder="Add todo..." 
-      className={classes.formInput} 
-      type="text"
-      value = {task}
+
+    <form className={classes.form} onSubmit={submitHandler}>
+      <input
+        onChange={onChange}
+        name="title"
+        placeholder="Add todo..."
+        className={classes.formInput}
+        type="text"
+        value={task}
       />
       <button type="submit" className={classes.inputSubmit}>
-        <FaPlusCircle style={{ color: "darkcyan", fontSize: "20px", marginTop: "2px" }}/>
+        <FaPlusCircle style={{ color: 'darkcyan', fontSize: '20px', marginTop: '2px' }} />
       </button>
     </form>
-  )
+  );
 }
 
-export default ToDoListForm
+export default ToDoListForm;

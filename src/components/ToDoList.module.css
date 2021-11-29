@@ -1,13 +1,12 @@
-.container{
+.container {
   width: 500px;
   margin: 13rem auto;
 }
 
-.p{
-    text-align: center;
-    font-size: 3rem;
-    font-weight: 900;
-    color: #cbcbcb;
-    padding-bottom: 4rem;;
+.p {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 900;
+  color: #cbcbcb;
+  padding-bottom: 4rem;
 }
-
