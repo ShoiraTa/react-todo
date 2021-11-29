@@ -2,7 +2,7 @@
 
 # UserList app built usig React !
 
-Single page app that adds adds users to a list and displays error if username and userage values are invalid.
+Single page app that adds a list of toDo tasks. Users can edit and delete tasks.
 
 ## Built With
 
@@ -13,11 +13,9 @@ Single page app that adds adds users to a list and displays error if username an
 
 ## Website Demo
 
-[Demo-page](http://ShoiraTa.github.io/add-user-app)
+[Demo-page](http://ShoiraTa.github.io/react-todo)
 
-| Error modal           | Enter a user          |
-| --------------------- | --------------------- |
-| ![image](./demo1.jpg) | ![image](./demo2.jpg) |
+![image](./demo.jpg)
 
 ## Authors
 

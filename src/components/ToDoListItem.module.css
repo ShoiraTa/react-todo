@@ -1,0 +1,50 @@
+.item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid gainsboro;
+  height: 40px  ;
+  width: 100%;
+}
+
+.itemLeft{
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+
+.itemLeft input {
+  margin-right: 0.5rem
+}
+
+.itemLeft input, button{
+  cursor: pointer  ;
+  cursor: pointer;
+    background: none;
+    border: none;
+    padding-right: 15px;
+    font-size: 1.2rem;
+}
+
+.completed {
+  text-decoration: line-through;
+  font-style: italic;
+}
+
+.p{
+  width: 400px;
+
+  padding: 0 5px;
+}
+.p:focus{
+  outline: 1px solid gainsboro;
+  border-radius: 7px;
+}
+
+.dNone{
+  display: none;
+}
+
+.dBlock{
+  display: block;
+}
